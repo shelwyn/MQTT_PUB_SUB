@@ -9,6 +9,6 @@ def on_publish(client, userdata, result):
 client = paho.Client("<client name>")
 client.on_publish = on_publish
 client.connect(broker, port)
-message = "MESSAGE_TO_PUBLISH"
+message = "<message to publish>"
 
-PUB = client.publish("TOPIC", message)
+PUB = client.publish("<topic>", message)
