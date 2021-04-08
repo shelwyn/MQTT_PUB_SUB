@@ -6,7 +6,7 @@ timelive = 60
 
 def on_connect(client, userdata, flags, rc):
     print("Connected to broker")
-    client.subscribe("TOPIC")
+    client.subscribe("<topic>")
 
 
 def on_message(client, userdata, msg):
