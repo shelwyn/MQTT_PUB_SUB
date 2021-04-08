@@ -1,14 +1,12 @@
 import paho.mqtt.client as paho
 
-broker = "152.67.164.1"
+broker = "<broker ip address>"
 port = 1883
-timelive = 60
 
 def on_publish(client, userdata, result):
-    print("Published Message")
-    pass
+    print("Message published")
    
-client = paho.Client("CLIENT_NAME")
+client = paho.Client("<client name>")
 client.on_publish = on_publish
 client.connect(broker, port)
 message = "MESSAGE_TO_PUBLISH"
