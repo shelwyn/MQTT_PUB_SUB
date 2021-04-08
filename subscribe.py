@@ -1,12 +1,12 @@
 import paho.mqtt.client as mqtt
 
-broker = "152.67.164.1"
+broker = "<broker ip address>"
 port = 1883
 timelive = 60
 
 def on_connect(client, userdata, flags, rc):
     print("Connected to broker")
-    client.subscribe("TOPIC_HERE")
+    client.subscribe("TOPIC")
 
 
 def on_message(client, userdata, msg):
